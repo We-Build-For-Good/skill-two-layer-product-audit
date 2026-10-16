@@ -24,19 +24,19 @@ It ensures that product audits combine both **white-box source code inspection**
 
 ### For Claude Code
 ```bash
-git clone https://github.com/webuildforgood/skill-two-layer-product-audit.git ~/.claude/skills/two-layer-product-audit
+git clone https://github.com/We-Build-For-Good/skill-two-layer-product-audit.git ~/.claude/skills/two-layer-product-audit
 ```
 
 ### For Cursor
 ```bash
 mkdir -p .cursor/skills
-git clone https://github.com/webuildforgood/skill-two-layer-product-audit.git .cursor/skills/two-layer-product-audit
+git clone https://github.com/We-Build-For-Good/skill-two-layer-product-audit.git .cursor/skills/two-layer-product-audit
 ```
 
 ### For Antigravity / Open Agent Skills
 ```bash
 mkdir -p .agents/skills
-git clone https://github.com/webuildforgood/skill-two-layer-product-audit.git .agents/skills/two-layer-product-audit
+git clone https://github.com/We-Build-For-Good/skill-two-layer-product-audit.git .agents/skills/two-layer-product-audit
 ```
 
 ---
