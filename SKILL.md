@@ -1,6 +1,6 @@
 ---
 name: two-layer-product-audit
-description: Product and code auditing protocol that enforces two distinct layers: (1) white-box source truth, and (2) rendered visual experience pass with screenshots and UX measurements. Mandates a strict human decision gate between the Diagnosis (the claims) and the Implementation Spec (the commitments) before an AI writes code.
+description: "Product and code auditing protocol that enforces two distinct layers: (1) white-box source truth, and (2) rendered visual experience pass with screenshots and UX measurements. Mandates a strict human decision gate between the Diagnosis (the claims) and the Implementation Spec (the commitments) before an AI writes code."
 license: MIT
 metadata:
   author: We Build for Good
