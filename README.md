@@ -9,7 +9,7 @@
 
 `two-layer-product-audit` is an operational auditing protocol for AI assistants (Claude Code, Cursor, Antigravity, OpenAI Codex).
 
-It ensures that product audits combine both **white-box source code inspection** and **rendered visual/UX passes**, while enforcing a strict human gate between identifying problems and writing code to fix them.
+It ensures that product audits combine both **white-box source code inspection** and **rendered visual/UX passes**, while requiring a human decision between identifying problems and writing code to fix them.
 
 ---
 

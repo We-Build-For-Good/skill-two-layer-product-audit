@@ -4,7 +4,7 @@ description: "Product and code auditing protocol that enforces two distinct laye
 license: MIT
 metadata:
   author: We Build for Good
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Two-Layer Product Audit: Diagnosis vs Specification Protocol
@@ -14,7 +14,7 @@ When AI agents audit an application, they typically fall into one of two traps:
 1. **The Code-Only Trap**: They grep source files, find database optimizations and TypeScript typing flaws, but remain completely blind to the fact that the mobile login button is 11 pixels high, unclickable, and hidden beneath a cookie banner.
 2. **The Scope-Inflation Trap**: They find twenty minor imperfections and immediately start refactoring code, rewriting features that the human founder never intended to change.
 
-The `two-layer-product-audit` protocol solves both failures. It mandates two forensic layers of investigation and inserts an unskippable human decision gate between the **Diagnosis** and the **Implementation Specification**.
+The `two-layer-product-audit` protocol solves both failures. It mandates two forensic layers of investigation and inserts a human decision gate between the **Diagnosis** and the **Implementation Specification**.
 
 ---
 
@@ -29,10 +29,11 @@ Every product audit must execute both layers:
 ### Layer 2: Rendered Experience Pass (The Human Reality)
 * Inspect the actual rendered DOM across three responsive viewports: Mobile (375px), Tablet (768px), and Desktop (1280px).
 * Measure physical usability constraints:
-  * Base text must be at least 16px on mobile (preventing iOS auto-zoom).
-  * Touch targets must be at least 44px by 44px.
-  * No more than seven choices above the mobile fold.
-  * Contrast ratios must pass WCAG AA standards.
+  * Body text is readable on mobile (16px is a common baseline), and form inputs are at least 16px, or iOS Safari zooms in when they are focused.
+  * Touch targets are at least 24px by 24px (WCAG 2.2 AA, 2.5.8); aim for 44px by 44px (Apple's guideline, WCAG AAA).
+  * Few competing choices above the mobile fold (a heuristic, not a standard).
+  * Text contrast passes WCAG AA (4.5:1, or 3:1 for large text).
+* [skill-visual-sensory-audit](https://github.com/We-Build-For-Good/skill-visual-sensory-audit) automates the overflow, broken-image, request and tap-target checks at all three widths.
 * Capture real screenshots of the primary user journey at every step.
 
 ---
